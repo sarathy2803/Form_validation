@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bio Data Form</title>
+  
+  <!-- CSS Stylesheet -->
+  <link href="./css/BioData.css" rel="stylesheet">
+
+  <!-- Bootstrap Stylesheet !-->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./Js/bootstrap.min.js" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container mt-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-8">
+        <h2 class="text-center mb-1">Bio Data Form</h2>
+        <form id="bioDataForm" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" class="form-control" id="fullName" name="fullName">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" name="dob">
+          </div>
+          <div class="form-group">
+            <label for="num">Mobile Number</label>
+            <input type="number" class="form-control" id="num" name="num">
+          </div>
+          <div class="form-group">
+            <label>Gender</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="maleGender" value="Male">
+              <label class="form-check-label" for="maleGender">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="femaleGender" value="Female">
+              <label class="form-check-label" for="femaleGender">Female</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea class="form-control" id="address" name="address" rows="1"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="photo">Photo</label><br>
+            <input type="file" class="form-control-file" id="photo" name="photo" multiple>
+          </div>(Size Limit 5 mb)
+          <button type="submit" class="btn btn-success mt-1 btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Javascript stylesheet -->
+<script src="./Js/BioData.js"></script>
+</body>
+</html>
